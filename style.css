@@ -298,7 +298,9 @@ header {
   .nav-bar {
     display: none;
   }
-
+.top-header{
+    width: 100vw;
+}
 
 .g-compass {
     color: white;
