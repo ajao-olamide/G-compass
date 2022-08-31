@@ -406,10 +406,23 @@ header {
     width: 300px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .img-text img {
     width: 190px;
   }
+  .best-education-div {
+    width: 200px;
+    font-size: 12px;
+    color: white;
+}.best-education-div {
+    width: 200px;
+    font-size: 12px;
+    color: white;
+}
+.best-education-div h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
   .contact-section form {
     width: 60%;
     gap: 3em;
