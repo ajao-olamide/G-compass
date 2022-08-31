@@ -156,13 +156,13 @@ header {
   width: 500px;
 }
 .img-text {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 40px;
-    gap: 5em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+  gap: 5em;
 }
 .best-education-div {
   width: 600px;
@@ -258,76 +258,107 @@ header {
   color: burlywood;
 }
 @media (max-width: 500px) {
-    .footer h2 span{
-        font-size: 20px;
-    }
-    .footer h2 {
-        font-size: 15px;
-    }
+  .footer h2 span {
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-size: 15px;
+  }
 }
 @media (max-width: 600px) {
-    .contact-section form {
-        width: 200px;
-        gap: 3em;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(250, 250, 250, 0.1);
-      }
-      .contact-section form input,
-.contact-section form textarea {
-  background-color: #f5f5f5;
-  padding: 10px 0;
-  font-size: 20px;
-  outline: none;
-  border: none;
-}
-.contact-section form button {
-  width: 200px;
-  background: burlywood;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  padding: 10px;
-  font-size: 15px;
-}
+  .learn {
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 20px;
+  }
+  .contact-section form {
+    width: 200px;
+    gap: 3em;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 250, 250, 0.1);
+  }
+  .contact-section form input,
+  .contact-section form textarea {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    font-size: 20px;
+    outline: none;
+    border: none;
+  }
+  .contact-section form {
+    width: 80%;
+    gap: 3em;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 250, 250, 0.1);
+  }
 }
 
 @media (max-width: 750px) {
   .nav-bar {
     display: none;
   }
-.top-header{
+  .top-header {
     width: 100vw;
-}
+  }
 
-.g-compass {
+  .testimony-div {
+    width: 70%;
+    background-color: rgba(22, 34, 57, 0.4);
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .g-compass {
     color: white;
     font-size: 20px;
     margin-left: 30px;
-}
+  }
 
   .img-text img {
     width: 300px;
-}
-.best-education-div {
+  }
+  .best-education-div {
     width: 300px;
     color: white;
-}
+  }
   .check {
     display: block;
     left: 80%;
     opacity: 0;
     z-index: 2;
   }
+  .white-line {
+    transition: all ease-in-out 0.3s;
+  }
   .mother-link {
     display: flex;
     left: 78%;
-
+    transition: all ease-in-out 1s;
     z-index: 1;
   }
-  .nav-bar ul li{
+  .check:checked + .mother-link .white-line {
+    transform: rotate(135deg);
+  }
+  .check:checked + .mother-link .white-line::before,
+  .check:checked + .mother-link .white-line::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .check:checked:hover + .mother-link .white-line {
+    transform: rotate(225deg);
+  }
+  .nav-bar ul li {
     margin-bottom: 70px;
   }
   .nav-bar ul {
@@ -342,7 +373,7 @@ header {
     bottom: 0;
     right: 0;
     display: flex;
-    background-color : black;
+    background-color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -371,7 +402,41 @@ header {
     border: 0px solid burlywood;
     padding: 0px;
   }
-  .check:checked ~ .nav-bar{
+  .check:checked ~ .nav-bar {
     width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .img-text img {
+    width: 190px;
+  }
+  .contact-section form {
+    width: 60%;
+    gap: 3em;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 250, 250, 0.1);
+  }
+  .best-education-div {
+    width: 200px;
+    color: white;
+  }
+  .contact-section form button {
+    width: 200px;
+    background: burlywood;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .keep {
+    margin-bottom: 40px;
+    color: white;
+    padding: 20px;
+    border: #f5f5f5 2px solid;
+    font-size: 15px;
   }
 }
