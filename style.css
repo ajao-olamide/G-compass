@@ -9,13 +9,10 @@
   display: none;
   width: 60px;
   height: 60px;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 0%;
-  left: 95%;
-  background: black;
+  background: transparent;
 }
 .white-line {
   position: relative;
@@ -39,10 +36,10 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 0%;
+  top: 14%;
   display: none;
-  left: 95%;
-  z-index: 1;
+  right: 0;
+  z-index: 2;
   background: black;
 }
 .top-header {
@@ -386,9 +383,6 @@ header {
   }
 }
 @media (max-width: 768px) {
-  .nav-bar {
-    display: none;
-  }
   .top-header {
     width: 100vw;
   }
@@ -410,7 +404,6 @@ header {
   }
   .check {
     display: block;
-    left: 80%;
     opacity: 0;
     z-index: 2;
   }
@@ -437,13 +430,14 @@ header {
   .nav-bar ul li {
     margin-bottom: 70px;
   }
-  .nav-bar ul,.nav-bar ul li a {
-    transition: all ease-in-out .5s;
+  .nav-bar ul,
+  .nav-bar ul li a {
+    transition: all ease-in-out 0.5s;
     display: flex;
     flex-direction: column;
   }
   .nav-bar {
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out 0.5s;
     width: 0px;
     overflow: hidden;
     height: 100%;
@@ -451,15 +445,8 @@ header {
     bottom: 0;
     right: 0;
     display: flex;
-    background-color: black;
+    background-color: rgba(22, 34, 57, 1);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0px;
-  }
-  .nav-bar {
-    display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     margin-right: 0px;
@@ -488,13 +475,13 @@ header {
   }
 }
 @media (max-width: 500px) {
-  .school-div h3{
+  .school-div h3 {
     font-size: 18px;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
   .testimony-div {
     width: 94%;
-    
+
     background-color: rgba(22, 34, 57, 0.4);
     border: 2px solid burlywood;
     border-radius: 10px;
@@ -530,11 +517,10 @@ header {
     padding: 10px;
     font-size: 10px;
   }
-  .testimony-div{
+  .testimony-div {
     height: 250px;
-
   }
-  .school-div h3{
+  .school-div h3 {
     font-size: 14px;
   }
 }
