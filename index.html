@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G compass</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="top-header">
-      <h1 class="g-compass">G COMPASS</h1>
-      <input type="checkbox" class="check" name="" id="">
+    <section class="top-header" id="top-header">
+      <h1 class="g-compass">G-COMPASS</h1>
+      <input type="checkbox" class="check" name="" id="" />
       <div class="mother-link">
-<div class="white-line"></div>
+        <div class="white-line"></div>
       </div>
       <nav class="nav-bar">
         <ul>
@@ -33,7 +37,7 @@
         src="/images/course-video.mp4"
       ></video>
       <div class="overlay"></div>
-      <a href="#" class="learn">Learn More</a>
+      <a href="#" class="learn">Make Enquire</a>
     </header>
     <section class="first-section">
       <div id="choose" class="choose-div">
@@ -41,7 +45,7 @@
       </div>
       <div class="img-text">
         <img src="/images/choose-us-image-01.png" alt="" />
-        <div class="best-education-div">
+        <div class="best-education-div" style="margin-left: 3em">
           <h1>Best Education</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse
@@ -67,11 +71,15 @@
             atque eos ullam.
           </p>
         </div>
-        <img src="/images/choose-us-image-02.png" alt="" />
+        <img
+          src="/images/choose-us-image-02.png"
+          alt=""
+          style="margin-left: 3em"
+        />
       </div>
       <div class="img-text">
         <img src="/images/choose-us-image-03.png" alt="" />
-        <div class="best-education-div">
+        <div class="best-education-div" style="margin-left: 3em">
           <h1>Best Education</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse
@@ -100,107 +108,286 @@
         <button class="submit" type="submit">SEND MESSAGE NOW</button>
       </form>
     </section>
+
     <section id="testimony" class="mother-div">
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Quadri Salaudeen</h3>
+      <div class="swiper mySwiper swiper-h">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Lagos State University</div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2 swiper-v">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Quadri Salaudeen</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Computer-Science</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Segun Faruq</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Idan gan gan</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Atobiloye Quadri</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Economic Education</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="testimony-div">
+                      <div class="testimony-second-div">
+                        <img src="/images/author-01.png" alt="" />
+                        <h3>Tijani Saheed</h3>
+                      </div>
+                      <div class="school-div">
+                        <h3>Course: Physics</h3>
+                      </div>
+                      <p class="testimony-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellat, magnam sapiente laudantium a aliquam
+                        harum velit quasi sunt ipsa consectetur, repudiandae
+                        repellendus explicabo?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">Defence Academy</div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2 swiper-v">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Alajiki Yusuf</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Supplier & Logistics</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Adebayo Mahmud</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Biochemitry</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">Kwara State University</div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2 swiper-v">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Salawudeen Sammiat</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Library and Infomation Science</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Yusuf Sammiat</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Biochemitry</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Ajao Faruq</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Course: Marketing</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">Tai Solarin University of Education</div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2 swiper-v">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="testimony-div">
+                      <div class="testimony-second-div">
+                        <img src="/images/author-01.png" alt="" />
+                        <h3>Tayo</h3>
+                      </div>
+                      <div class="school-div">
+                        <h3>Course: Marketing</h3>
+                      </div>
+                      <p class="testimony-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellat, magnam sapiente laudantium a aliquam
+                        harum velit quasi sunt ipsa consectetur, repudiandae
+                        repellendus explicabo?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimony-div">
+                    <div class="testimony-second-div">
+                      <img src="/images/author-01.png" alt="" />
+                      <h3>Tayo</h3>
+                    </div>
+                    <div class="school-div">
+                      <h3>Marketing</h3>
+                    </div>
+                    <p class="testimony-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellat, magnam sapiente laudantium a aliquam harum velit
+                      quasi sunt ipsa consectetur, repudiandae repellendus
+                      explicabo?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="school-div">
-        <h3>Lagos State University</h3>
-        <h3>Computer-Science</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Alajiki Yusuf</h3>
-      </div>
-      <div class="school-div">
-        <h3>Nigerian Defence Academy</h3>
-        <h3>Supplier & Logistics</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Quadri Salaudeen</h3>
-      </div>
-      <div class="school-div">
-        <h3>Lagos State University</h3>
-        <h3>Computer-Science</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Quadri Salaudeen</h3>
-      </div>
-      <div class="school-div">
-        <h3>Lagos State University</h3>
-        <h3>Computer-Science</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Quadri Salaudeen</h3>
-      </div>
-      <div class="school-div">
-        <h3>Lagos State University</h3>
-        <h3>Computer-Science</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-      <div class="testimony-div">
-        <div class="testimony-second-div">
-          <img src="/images/author-01.png" alt="">
-          <h3>Quadri Salaudeen</h3>
-      </div>
-      <div class="school-div">
-        <h3>Lagos State University</h3>
-        <h3>Computer-Science</h3>
-      </div>
-        <p class="testimony-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
-          magnam sapiente laudantium a aliquam harum velit quasi sunt ipsa
-          consectetur, repudiandae repellendus explicabo?
-        </p>
-       
-      </div>
-     
     </section>
     <footer class="footer">
-        <h2> &COPY; COPYWRIGHT 2022 BY <SPAn class="burl">G</SPAn>COMPASS</h2>
+      <h2>&COPY; COPYWRIGHT 2022 BY <span class="burl">G</span>COMPASS</h2>
     </footer>
+
+    <script src="/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        direction: "vertical",
+        spaceBetween: 50,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
   </body>
 </html>
