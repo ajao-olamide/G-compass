@@ -155,7 +155,6 @@ header {
   padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 3em;
   width: 100%;
 }
 .choose-div {
@@ -182,11 +181,11 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   padding: 40px 5px;
   margin-bottom: 2em;
 }
+
 .best-education-div {
   width: 600px;
   color: white;
@@ -200,6 +199,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 30px;
+  width: 98%;
 }
 .contact-section {
   width: 100%;
@@ -232,6 +232,7 @@ header {
   gap: 3em;
   padding: 30px 40px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0.1);
 }
@@ -331,7 +332,8 @@ header {
   align-items: center;
   gap: 1em;
 }
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: burlywood;
 }
 
@@ -343,60 +345,45 @@ header {
   align-items: center;
   height: 100%;
   padding: 10px 0;
+  font-family: "Roboto", sans-serif;
   background-color: rgba(22, 34, 57, 0.7);
 }
 .burl {
-  font-size: 30px;
+  font-size: 20px;
   color: burlywood;
 }
-@media (max-width: 500px) {
-  .footer h2 span {
-    font-size: 20px;
+@media (max-width: 1200px) {
+  .img-text img {
+    width: 380px;
+    margin-left: 1em !important;
   }
-  .footer h2 {
-    font-size: 15px;
+  .best-education-div {
+    width: 480px;
+    margin-left: 1em !important;
   }
-}
-@media (max-width: 600px) {
-  .learn {
-    position: absolute;
-    text-decoration: none;
-    font-size: 20px;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    padding: 20px;
-  }
-  .contact-section form {
-    width: 200px;
-    gap: 3em;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(250, 250, 250, 0.1);
-  }
-  .contact-section form input,
-  .contact-section form textarea {
-    background-color: #f5f5f5;
-    padding: 10px 0;
-    font-size: 20px;
-    outline: none;
-    border: none;
-  }
-  .contact-section form {
-    width: 80%;
-    gap: 3em;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(250, 250, 250, 0.1);
+  .test .best-education-div {
+    margin-left: 0 !important;
   }
 }
-
-@media (max-width: 750px) {
+@media (max-width: 900px) {
+  .img-text {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .img-text img {
+    margin: 0 auto 2em 0 !important;
+  }
+  .best-education-div {
+    margin: 0 0 0 auto !important;
+  }
+  .test {
+    flex-direction: column-reverse !important;
+  }
+  .contact-section form {
+    padding: 3em 1em;
+  }
+}
+@media (max-width: 768px) {
   .nav-bar {
     display: none;
   }
@@ -406,25 +393,18 @@ header {
   .school-div {
     gap: 1em;
   }
+
   .testimony-div {
-    width: 70%;
+    width: 94%;
     background-color: rgba(22, 34, 57, 0.4);
     border: 2px solid burlywood;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 0.2em;
   }
   .g-compass {
     color: white;
     font-size: 20px;
     margin-left: 30px;
-  }
-
-  .img-text img {
-    width: 300px;
-  }
-  .best-education-div {
-    width: 300px;
-    color: white;
   }
   .check {
     display: block;
@@ -499,55 +479,35 @@ header {
   .check:checked ~ .nav-bar {
     width: 300px;
   }
+  .contact-section form {
+    width: 90%;
+  }
 }
-@media (max-width: 390px) {
+@media (max-width: 500px) {
+  .school-div h3{
+    font-size: 18px;
+    margin: .5em 0;
+  }
   .img-text img {
-    width: 190px;
+    width: 90%;
+    margin: 0 auto 2em !important;
+  }
+  .best-education-div {
+    width: 98%;
   }
   .contact-section form {
-    width: 150px;
-    gap: 3em;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(250, 250, 250, 0.1);
+    padding: 3em 0.2em;
   }
-  .contact-section form button {
-    width: 150px;
-    background: burlywood;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 10px;
-    font-size: 8px;
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 90%;
   }
-  .best-education-div {
-    width: 200px;
-    font-size: 12px;
-    color: white;
+  .keep {
+    font-size: 18px;
   }
-  .best-education-div {
-    width: 200px;
-    font-size: 12px;
-    color: white;
-  }
-  .best-education-div h1 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  .contact-section form {
-    width: 60%;
-    gap: 3em;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(250, 250, 250, 0.1);
-  }
-  .best-education-div {
-    width: 200px;
-    color: white;
-  }
+}
+
+@media (max-width: 390px) {
   .submit {
     width: 150px;
     background: burlywood;
@@ -557,22 +517,5 @@ header {
     border: none;
     padding: 10px;
     font-size: 10px;
-  }
-  .contact-section form button {
-    width: 200px;
-    background: burlywood;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 20px;
-    font-size: 15px;
-  }
-  .keep {
-    margin-bottom: 40px;
-    color: white;
-    padding: 20px;
-    border: #f5f5f5 2px solid;
-    font-size: 15px;
   }
 }
