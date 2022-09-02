@@ -395,7 +395,7 @@ header {
   }
 
   .testimony-div {
-    width: 94%;
+    width: 500px;
     background-color: rgba(22, 34, 57, 0.4);
     border: 2px solid burlywood;
     border-radius: 10px;
@@ -435,7 +435,8 @@ header {
   .nav-bar ul li {
     margin-bottom: 70px;
   }
-  .nav-bar ul {
+  .nav-bar ul,.nav-bar ul li a {
+    transition: all ease-in-out .5s;
     display: flex;
     flex-direction: column;
   }
@@ -488,6 +489,14 @@ header {
     font-size: 18px;
     margin: .5em 0;
   }
+  .testimony-div {
+    width: 94%;
+    
+    background-color: rgba(22, 34, 57, 0.4);
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 20px 0.2em;
+  }
   .img-text img {
     width: 90%;
     margin: 0 auto 2em !important;
@@ -517,5 +526,12 @@ header {
     border: none;
     padding: 10px;
     font-size: 10px;
+  }
+  .testimony-div{
+    height: 250px;
+
+  }
+  .school-div h3{
+    font-size: 14px;
   }
 }
