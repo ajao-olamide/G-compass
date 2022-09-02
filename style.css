@@ -71,12 +71,14 @@
 }
 .nav-bar {
   display: flex;
+  transition: all ease;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
 }
 
 .nav-bar ul {
+  transition: all ease;
   list-style: none;
   text-transform: uppercase;
   gap: 3em;
@@ -441,6 +443,7 @@ header {
     flex-direction: column;
   }
   .nav-bar {
+    transition: all ease-in-out .5s;
     width: 0px;
     overflow: hidden;
     height: 100%;
